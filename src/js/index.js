@@ -6,6 +6,7 @@ import forms from './modules/forms';
 import mask from './modules/mask';
 import checkInputsText from './modules/check-inputs-text';
 import showMoreStyles from './modules/show-more-styles';
+import calculatePrice from './modules/calculate-price';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -27,4 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkInputsText('[name="message"]');
 
     showMoreStyles('.button-styles', '.styles-2');
+
+    calculatePrice('#size', '#material', '#options', '.promocode', '.calc-price');
 });

@@ -231,31 +231,31 @@
 			<h2>Розрахуйте вартість і отримаєте знижку 30%</h2>
 			<div class=row>
 				<div class="col-md-4 col-offset-1">
-					<form class=form action=# method=POST enctype=multipart/form-data>
+					<form class="form calc-form" action=# method=POST enctype=multipart/form-data>
 						<h4>Загрузите свое фото</h4>
 						<div class=file_upload>
 							<button type=button>Завантажити фотографію</button>
 							<div>Файл не вибраний</div>
 							<input type=file name=upload>
 						</div>
-						<select id=size>
-							<option >Виберіть розмір картини</option>
-							<option >40x50</option>
-							<option >50x70</option>
-							<option >70x70</option>
-							<option >70x100</option>
+						<select name="size" id=size>
+							<option value>Виберіть розмір картини</option>
+							<option value="500">40x50</option>
+							<option value="1000">50x70</option>
+							<option value="1500">70x70</option>
+							<option value="2000">70x100</option>
 						</select>
-						<select id=material>
-							<option >Виберіть матеріал картини</option>
-							<option   title="Витончений, дозволяє легко створювати текстуру, підходить для декоративних картин маслом.">Полотно з волокна</option>
-							<option   title="Досить грубий і створює відчуття реальності, підходить для класичних пейзажів, натюрмортів і портретів.">Лляне полотно</option>
-							<option  title="Витончений, підходить для всіх типів реалістичних портретів.">Полотно з натуральної бавовни</option>
+						<select name="material" id=material>
+							<option value>Виберіть матеріал картини</option>
+							<option value="1" title="Витончений, дозволяє легко створювати текстуру, підходить для декоративних картин маслом.">Полотно з волокна</option>
+							<option value="1.5" title="Досить грубий і створює відчуття реальності, підходить для класичних пейзажів, натюрмортів і портретів.">Лляне полотно</option>
+							<option value="2" title="Витончений, підходить для всіх типів реалістичних портретів.">Полотно з натуральної бавовни</option>
 						</select>
-						<select id=options>
-							<option >Додаткові послуги</option>
-							<option >Покриття арт-гелем</option>
-							<option >Експресс-виготовлення</option>
-							<option >Доставка готоивх робіт </option>
+						<select name="options" id=options>
+							<option value="0">Додаткові послуги</option>
+							<option value="1000">Покриття арт-гелем</option>
+							<option value="2000">Експресс-виготовлення</option>
+							<option value="50">Доставка готоивх робіт </option>
 						</select>
 						<input type="text" class="promocode" placeholder="Введіть ваш промокод">
 						<div class=calc-price>Для розрахунку потрібно вибрати розмір картини і матеріал картини</div>
