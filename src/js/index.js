@@ -3,6 +3,8 @@ import sliders from './modules/sliders';
 import showDemoPictures from './modules/demo-pictures';
 import accordion from './modules/accordion';
 import forms from './modules/forms';
+import mask from './modules/mask';
+import checkInputsText from './modules/check-inputs-text';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -17,4 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     accordion('.accordion-heading', '.accordion-block');
 
     forms();
+
+    mask('[name="phone"]');
+
+    checkInputsText('[name="name"]');
+    checkInputsText('[name="message"]');
 });
