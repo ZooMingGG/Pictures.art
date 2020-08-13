@@ -59,6 +59,9 @@ h3,
 h4 {
   font-family: 'Circe Extra Bold', sans-serif;
 }
+.status {
+  text-align: center;
+}
 .p15 {
   font-size: 1.5;
 }
@@ -917,20 +920,19 @@ h4 {
   border-bottom: 3rem solid #f7e7e6;
 }
 .often-questions .ui-accordion-header-active {
-  cursor: auto;
   color: #c51abb;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .often-questions .ui-accordion-header-active span {
   border-bottom: none;
 }
 .often-questions .ui-accordion-content-active {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 .often-questions .brushes {
   position: absolute;
   bottom: 0;
-  right: 5%;
+  right: 0%;
 }
 .often-questions .spirt {
   position: absolute;
