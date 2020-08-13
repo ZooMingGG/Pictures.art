@@ -7,6 +7,7 @@ import mask from './modules/mask';
 import checkInputsText from './modules/check-inputs-text';
 import showMoreStyles from './modules/show-more-styles';
 import calculatePrice from './modules/calculate-price';
+import filterPortfolio from './modules/filter-portfolio';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -30,4 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showMoreStyles('.button-styles', '.styles-2');
 
     calculatePrice('#size', '#material', '#options', '.promocode', '.calc-price');
+
+    filterPortfolio();
 });
