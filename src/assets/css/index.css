@@ -1486,6 +1486,14 @@ h4 {
   }
 }
 @media (max-width: 767px) {
+  .main-slider-item > img {
+    display: block;
+    margin: 20px auto 0;
+    max-width: 95%;
+  }
+  .main .p-heading-italic {
+    margin-top: 10px;
+  }
   .main-features {
     max-width: 30rem;
     margin-left: auto;
