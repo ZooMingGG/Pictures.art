@@ -5,6 +5,7 @@ import accordion from './modules/accordion';
 import forms from './modules/forms';
 import mask from './modules/mask';
 import checkInputsText from './modules/check-inputs-text';
+import showMoreStyles from './modules/show-more-styles';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -24,4 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     checkInputsText('[name="name"]');
     checkInputsText('[name="message"]');
+
+    showMoreStyles('.button-styles', '.styles-2');
 });
