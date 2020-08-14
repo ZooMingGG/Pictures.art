@@ -1485,6 +1485,11 @@ h4 {
   .feedback .button-order {
     left: 11rem;
   }
+  .feedback-block img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
   .often-questions .spirt {
     display: none;
   }
@@ -1564,6 +1569,9 @@ h4 {
   }
   .feedback-slider-item {
     padding-bottom: 0;
+  }
+  .feedback-slider-item .col-sm-offset-1{
+    display: none;
   }
   .feedback-heading {
     margin-top: 6rem;
