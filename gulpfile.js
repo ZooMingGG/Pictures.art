@@ -4,9 +4,9 @@ const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
 
-// const dist = "./dist/";
+const dist = "./dist/";
 
-const dist = "/MAMP/htdocs/";  //const dist = "/MAMP/htdocs/";
+// const dist = "/MAMP/htdocs/";  //const dist = "/MAMP/htdocs/";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
@@ -42,7 +42,7 @@ gulp.task("build-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest('/MAMP/htdocs/js/')) //dist + 'js/';  // '/MAMP/htdocs/js/'
+                .pipe(gulp.dest(dist + 'js/')) //dist + 'js/';  // '/MAMP/htdocs/js/'
                 .on("end", browsersync.reload);
 });
 
@@ -54,7 +54,7 @@ gulp.task("copy-assets", () => {
 
 gulp.task("watch", () => {
     browsersync.init({
-		server: '/MAMP/htdocs/', //dist // '/MAMP/htdocs/'
+		server: dist, //dist // '/MAMP/htdocs/'
 		port: 4000,
     notify: false,
     browser: 'chrome'
@@ -92,7 +92,7 @@ gulp.task("build-prod-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest('/MAMP/htdocs/js/')); //dist + 'js/'; // '/MAMP/htdocs/js/'
+                .pipe(gulp.dest(dist + 'js/')); //dist + 'js/'; // '/MAMP/htdocs/js/'
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));

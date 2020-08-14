@@ -10,6 +10,7 @@ import calculatePrice from './modules/calculate-price';
 import filterPortfolio from './modules/filter-portfolio';
 import burger from './modules/burger';
 import dragAndDrop from './modules/drag-and-drop';
+import smoothScroll from './modules/scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -28,4 +29,5 @@ document.addEventListener('DOMContentLoaded', () => {
     filterPortfolio();
     burger('.burger', '.burger-menu');
     dragAndDrop();
+    smoothScroll('.pageup');
 });
