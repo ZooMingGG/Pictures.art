@@ -9,6 +9,7 @@ import showMoreStyles from './modules/show-more-styles';
 import calculatePrice from './modules/calculate-price';
 import filterPortfolio from './modules/filter-portfolio';
 import burger from './modules/burger';
+import dragAndDrop from './modules/drag-and-drop';
 
 document.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -26,4 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
     calculatePrice('#size', '#material', '#options', '.promocode', '.calc-price');
     filterPortfolio();
     burger('.burger', '.burger-menu');
+    dragAndDrop();
 });
